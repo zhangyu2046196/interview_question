@@ -17,7 +17,7 @@ public class VolatileDemo {
             System.out.println(Thread.currentThread().getName() + " come in");
             //休眠3秒钟 模拟高并发场景
             try {
-                Thread.sleep(3);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
