@@ -38,16 +38,13 @@ public class SynchronousQueueDemo {
         new Thread(() -> {
             try {
                 TimeUnit.SECONDS.sleep(5);
-                System.out.println(Thread.currentThread().getName() + "\t take");
-                blockingQueue.take();
+                System.out.println(Thread.currentThread().getName() + "\t take "+blockingQueue.take());
 
                 TimeUnit.SECONDS.sleep(5);
-                System.out.println(Thread.currentThread().getName() + "\t take");
-                blockingQueue.take();
+                System.out.println(Thread.currentThread().getName() + "\t take "+blockingQueue.take());
 
                 TimeUnit.SECONDS.sleep(5);
-                System.out.println(Thread.currentThread().getName() + "\t take");
-                blockingQueue.take();
+                System.out.println(Thread.currentThread().getName() + "\t take "+blockingQueue.take());
 
             } catch (InterruptedException e) {
                 e.printStackTrace();
